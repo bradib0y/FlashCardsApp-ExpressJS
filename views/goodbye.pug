@@ -1,0 +1,10 @@
+extends layout.pug
+
+block main
+    
+    h1 Hello #{name}
+    form(action="/goodbye", method="post")
+        p Are you sure about logging out?
+        input(type="submit", value="LOG OUT")
+        div
+            a(href="/") <- Back
